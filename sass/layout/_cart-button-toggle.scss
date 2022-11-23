@@ -1,0 +1,8 @@
+.cart-button-toggle {
+    display: none;
+    
+    &:checked ~ .main-header .modal-container{
+        display: flex;;
+    }
+    
+}

@@ -1,0 +1,187 @@
+.card {
+    border: 8px solid #ed1c24;
+    color: #47b;
+    background-color: white;
+    padding: 1em;
+    box-shadow: 0 10px 5px rgba(0, 0, 0, 0.2), 0 0 30px rgba(0, 0, 0, 0.4);
+    border-radius: 20px;
+    transition: all 0.5s;
+    display: flex;
+    flex-direction: column-reverse;
+    transform: skewY(-3deg) skewX(-3deg);
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+
+    &__article {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+
+        @media (min-width: 768px) {
+
+        }
+
+        @media (min-width: 1024px) {
+            flex-direction: row;
+
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1em;
+
+        @media (min-width: 1024px) {
+            flex-direction: row;
+        }
+    }
+
+    &:hover {
+        color: white;
+        background-color: rgb(68, 119, 187, .8);
+        box-shadow: -2px 2px 5px #ed1c24, -2px -2px 5px #ed1c24,
+            2px 2px 5px #ed1c24, 2px -2px 5px #ed1c24;
+    }
+
+    &:active {
+        transform: skewY(0deg) skewX(360deg);
+        transition: none;
+    }
+
+    &__image-container {
+        border: #ed1c24 solid 7px;
+        border-radius: 8px;
+        width: 50%;
+        max-width: 150px;
+        @media (min-width: 768px) {
+            max-width: none;
+
+        }
+        @media (min-width: 1024px) {
+            width: 1000px;
+            margin-top: 4.5em;
+            height: fit-content;
+        }
+    }
+
+    &__image {
+        width: 100%;
+        @media (min-width: 768px) {
+        }
+    }
+
+    &__price {
+        position: absolute;
+        right: 0;
+
+        @media (min-width: 768px) {
+            font-size: 3em;
+            top: 5%;
+        }
+
+        @media (min-width: 1024px) {
+            font-size: 5em;
+            top: -20%;
+        }
+    }
+
+    &__heading {
+        text-align: center;
+        width: 100%;
+        line-height: 0.1em;
+        @media (min-width: 768px) {
+            font-size: 3em;
+            text-shadow: 
+            3px -3px #ed1c24, 
+            -3px -3px #ed1c24, 
+            3px 3px #ed1c24,
+            -3px 3px #ed1c24
+            ;
+            position: absolute;
+            top: 0;
+            text-align: right;
+        }
+        @media (min-width: 1024px) {
+            font-size: 5em;
+            top: -10%;
+            left: 0;
+            text-align: left;
+        }
+    }
+
+    &__description {
+        text-align: justify;
+        padding: 0.5em;
+        @media (min-width: 768px) {
+            font-size: 2em;
+            color: black;
+            width: 100%;
+        }
+
+        @media (min-width: 1024px) {
+            left: 22%;
+            padding-top: 5%;
+            text-align: left;
+        }
+    }
+
+    &__link-add {
+        align-self: flex-end;
+        position: relative;
+        bottom: 5%;
+        text-decoration: none;
+        padding: 3px;
+        border: #47b solid 5px;
+        background-color: #ed1c24;
+        border-radius: 20px;
+
+        &:hover {
+            background-color: transparent;
+            border: solid #ed1c24;
+            color: #ed1c24;
+        }
+
+        &:active {
+            background-color: rgb(237, 28, 36, 0.5);
+            border: solid #ed1c24;
+            color: #47b;
+        }
+
+        @media (min-width: 768px) {
+            font-size: 1.5em;
+        }
+    }
+
+    @media (min-width: 768px) {
+        margin: 1em;
+
+        &:hover {
+            color: white;
+            box-shadow: 
+            -5px 5px 5px #ed1c24, 
+            -5px -5px 5px #ed1c24,
+            5px 5px 5px #ed1c24, 
+            5px -5px 5px #ed1c24
+            ;
+            color: white;
+            transform: scale(1.05);
+            box-shadow: 
+            -5px 5px 10px #47b, 
+            -5px -5px 10px #47b,
+            5px -5px 10px #47b, 
+            5px 5px 10px #47b
+            ;
+        }
+    }
+
+    @media (min-width: 768px) {
+        min-width: 500px;
+    }
+
+    @media (min-width: 1024px) {
+        margin-bottom: 5em;
+        min-width: 1000px;
+    }
+}

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Inicio</title>
+        <link rel="stylesheet" href="css/main.css">
+        <script src="https://kit.fontawesome.com/f3e9708434.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <input type="checkbox" class="main-nav-toggle" name="toggle" id="main-nav-toggle">
+        <input type="checkbox" class="cart-button-toggle" name="toggle" id="cart-button-toggle">
+        <header class="main-header">
+            <div class="main-header__logo-container">
+                <img class="main-header__logo-container_logo" src="img/logo-cosmica.png" alt="logo Juguetería Cósmica">
+            </div>
+            <div class="main-header__search-form-container">
+                <form class="main-header__search-form">
+                    <label class="main-header__search-form__label" for="search">Buscar:</label>
+                    <input class="main-header__search-form__input" id="search" type="search" name="q">
+                    <input class="main-header__search-form__button" value="búsqueda" type="submit">
+                </form>
+            </div>
+            <div class="main-header__cart-button-container">
+                <label for="cart-button-toggle">
+                    <img class="main-header__cart-button-container_cart" src="img/buy_cart_discount_shop_shopping_icon.png" alt="carrito de compras">
+                </label>
+                <div class="modal-container modal-container--cart">
+                    
+                    <div class="buy-cart">
+                        <button class="buy-cart__exit fa-solid fa-xmark"></button>
+                        <h2>Productos seleccionados</h2>
+                        <div class="buy-cart__content">
+                            
+                            <div class="buy-cart__products-container"></div>
+
+                        </div>
+
+                        <p>Total compra: $ <span class="total-buy" data-total="">0</span></p>
+                        <button disabled class="buy-cart__confirm">Confirmar compra</button>
+                    </div>
+                    </div>
+
+                </div>
+            
+            <div class="main-header__hamburger-button-container">
+                <label class="hamburger-button" for="main-nav-toggle" title="Expandir la barra de navegación">
+                    <span class="hamburger-button__top-bread"></span>
+                    <span class="hamburger-button__meat"></span>
+                    <span class="hamburger-button__bottom-bread"></span>
+                </label>
+            </div>
+            <div class="main-header__main-nav-container">
+                <nav class="main-nav">
+                    <ul class="main-nav__list">
+                        <li class="main-nav__item">
+                            <a href="#/inicio" target="_self" class="main-nav__link">Inicio</a>
+                        </li>
+                        <li class="main-nav__item">
+                            <a href="#/alta" target="_self" class="main-nav__link">Alta</a>
+                        </li>
+                        <li class="main-nav__item">
+                            <a href="#/contacto" target="_self" class="main-nav__link">Contacto</a>
+                        </li>
+                        <li class="main-nav__item">
+                            <a href="#/nosotros" target="_self" class="main-nav__link">Nosotros</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+        </header>
+
+        <main></main>
+
+        <footer class="main-footer">
+            <ul class="main-footer__list">
+                <li class="main-footer__list-item">
+                    <a class="main-footer__link" href="">Nuestras sucursales</a>
+                </li>
+                <li class="main-footer__list-item">
+                    <a class="main-footer__link" href="">Preguntas frecuentes</a>
+                </li>
+                <li class="main-footer__list-item">
+                    <a class="main-footer__link" href="">Ayuda</a>
+                </li>
+                <li class="main-footer__list-item">
+                    <a class="main-footer__link" href="">Legales</a>
+                </li>
+                <li class="main-footer__list-item">
+                    <a class="main-footer__link" href="">Términos y condiciones</a>
+                </li>
+                <li class="main-footer__list-item">
+                    <a class="main-footer__link" href="">Trabajá con nosotros</a>
+                </li>
+                <li class="main-footer__list-item">
+                    Tel: 11 2222 3333
+                </li>
+                <li class="main-footer__list-item">
+                    Atención telefónica de lunes a viernes de 9 a 18hs
+                </li>
+                <li class="main-footer__list-item">
+                    <a class="main-footer__link" href="">Chat Online</a>
+                </li>
+                <li class="main-footer__list-item">
+                    <a class="main-footer__link" href="">info@jugueteriacosmica.com.ar</a>
+                </li>
+                <li class="main-footer__list-item">
+                    Casa Central: CALLE ALTURA NRO DEPTO , CIUDAD, PAIS
+                </li>
+            </ul>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+        <script type="module" src="js/main.js"></script>
+    </body>
+</html>

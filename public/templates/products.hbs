@@ -1,0 +1,17 @@
+{{#each products}}
+<div class="card">
+    <a href="#" class="card__link-add" data-id="{{id}}">Agregar</a>
+        <article class="card__article">
+            <h2 class="card__price">${{price}}</h2>
+            <div class="card__image-container">
+                <img src={{productImage}} alt="prodName" class="card__image">
+            </div>
+            <div class="card__content">
+                <h2 class="card__heading">{{productName}}</h2>
+                <div class="card__description">
+                    <p>{{shortDesc}}</p>
+                </div>
+            </div>
+        </article>
+</div>  
+{{/each}}

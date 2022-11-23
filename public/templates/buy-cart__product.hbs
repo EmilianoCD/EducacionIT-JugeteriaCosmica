@@ -1,0 +1,32 @@
+<div class="buy-cart__product" data-id="{{id}}">
+    <dl class="">
+        {{!-- <dt class="">Nombre</dt> --}}
+        <dd class="">{{productName}}</dd>
+        {{!-- <dt class="">Imagen:</dt> --}}
+        <dd class=""><img
+                src="{{productImage}}"
+                alt="{{productName}}"
+                class="buy-cart__product-image"
+            /></dd>
+        <dt class="">Cantidad:</dt>
+        <dd class="buy-cart__product-quant" ><span data-quantity="{{id}}">1</span></dd>
+        <dt class="">Precio:</dt>
+        <dd class="">$ {{price}}</dd>
+        <dt class="">Subtotal:</dt>
+        <dd class="">$<span data-subtotal="{{id}}"> {{price}}</span></dd>
+    </dl>
+
+    <button
+        class="buy-cart-button fa-solid fa-plus"
+        data-plus="{{id}}"
+    ></button>
+    <button
+        class="buy-cart-button fa-solid fa-minus"
+        data-minus="{{id}}"
+    ></button>
+    <button
+        class="buy-cart-button fa-solid fa-trash-can"
+        data-delete="{{id}}"
+    ></button>
+
+</div>

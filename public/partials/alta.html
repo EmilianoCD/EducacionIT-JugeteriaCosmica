@@ -1,0 +1,71 @@
+<form class="form registration-form">
+    <div class="form__section registration-form__name">
+        <Label class="form__label" for="prodName">Nombre</Label>
+        <input id="prodName" name="productName" type="text" class="form__input registration-form__name__input">
+        <div class="error-detail"></div>
+    </div>
+    <div class="form__section registration-form__price">
+        <Label class="form__label" for="price">Precio</Label>
+        <input id="price" name="price" type="text" class="form__input registration-form__price__input">
+        <div class="error-detail"></div>
+    </div>
+    <div class="form__section registration-form__stock">
+        <Label class="form__label" for="stock">Stock</Label>
+        <input id="stock" name="stock" type="text" class="form__input registration-form__stock__input">
+        <div class="error-detail"></div>
+    </div>
+    <div class="form__section registration-form__brand">
+        <Label class="form__label" for="brand">Marca</Label>
+        <input id="brand" name="brand" type="text" class="form__input registration-form__brand__input">
+        <div class="error-detail"></div>
+    </div>
+    <div class="form__section registration-form__category">
+        <Label class="form__label" for="category">Categoría</Label>
+        <input id="category" name="category" type="text" class="form__input registration-form__category__input">
+        <div class="error-detail"></div>
+    </div>
+    <div class="form__section registration-form__shDescription">
+        <Label class="form__label" for="shortDescription">Descripción corta</Label>
+        <input id="shortDescription" name="shortDesc" type="text" class="form__input registration-form__shDescription__input">
+        <div class="error-detail"></div>
+    </div>
+    <div class="form__section registration-form__lgDescription">
+        <Label class="form__label" for="longDescription">Descripción larga</Label>
+        <input id="longDescription" name="longDesc" type="text" class="form__input registration-form__lgDescription__input">
+        <div class="error-detail"></div>
+    </div>
+    <div class="form__section registration-form__freeShipping">
+        <input id="freeShipping" name="freeShipping" type="checkbox" class="form__input registration-form__freeShipping__input ">
+        <Label for="freeShipping" class="registration-form__freeShipping__label form__label">envío sin cargo</Label>
+        <div class="error-detail"></div>
+    </div>
+    <label for="ageType">meses o años?</label>
+    <select required name="ageType" id="ageType">
+        <option selected value="years">años</option>
+        <option value="months">meses</option>
+    </select>
+    <div class="form__section registration-form__ageFrom">
+        <Label class="form__label" for="ageFrom">edad desde</Label>
+        <input id="ageFrom" name="ageFrom" type="text" class="form__input registration-form__ageFrom__input">
+        <div class="error-detail"></div>
+    </div>
+    <div class="form__section registration-form__ageTo">
+        <Label class="form__label" for="ageTo">edad hasta</Label>
+        <input id="ageTo" name="ageTo" type="text" class="form__input registration-form__ageTo__input">
+        <div class="error-detail"></div>
+    </div>
+    <div class="form__section registration-form__photo">
+        <Label class="form__label" for="photo">foto</Label>
+        <input id="photo" name="productImage" type="file" class="form__input registration-form__photo__input">
+        <div class="error-detail"></div>
+    </div>
+    <input type="submit" class="form__button" data-create>
+    <input type="submit" value="Actualizar" class="form__button" disabled data-update>
+    <input type="reset" value="Cancelar" class="form__button" disabled data-reset>
+
+</form>
+
+<section class="section-products-table">
+    <h2>Listado de productos</h2>
+    <div class="products-table-container"></div>
+</section>

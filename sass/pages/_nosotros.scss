@@ -1,0 +1,46 @@
+.nosotros {
+    &__article{
+        margin: 2rem;
+        background-color: rgb(255, 255, 255, .5);
+        box-shadow: 
+        1em -1em 2em #ED1C24,
+        -1em -1em 2em #ED1C24,
+        1em 1em 2em #ED1C24,
+        -1em 1em 2em #ED1C24,
+        ;
+        border-radius: 1em;
+        color: #47b;
+        text-shadow: none;
+        padding: .2em;
+        
+        
+    }
+    &__tittle{
+        background-color: rgb(255, 255, 255, .75);
+        line-height: 2em;
+    }
+    &__img__container {
+        border: solid .5em #ED1C24;
+        width: 10em;
+        height: 10em;
+        padding: 1em;
+        background-image: url(../../img/Nosotros_img/Foto-CV-2-2022.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top;
+        margin-bottom: 1em;
+        border-radius: .5em;
+    }
+    &__content {
+        padding: 1em;
+        background-color: rgb(255, 255, 255, .75);
+        box-shadow: 
+        .5em -.5em 1em #47b,
+        -.5em -.5em 1em #47b,
+        .5em .5em 1em #47b,
+        -.5em .5em 1em #47b
+        ;
+        border-radius: 1em;
+    }
+    
+}

@@ -1,0 +1,54 @@
+.main-footer {
+    width: 100%;
+    min-width: 300px;
+    background-color: white;
+    background-image: url(../../img/logo-cosmica-footer.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border: solid #ED1C24 8px;
+    border-radius: 12px;
+    height: 130px;
+    font-size: .4em;
+    margin-top: 10em;
+    
+    &__list {
+        width: 70%;
+        position: absolute;
+        left: -35px;
+        
+        
+        &-item {
+            list-style-type: none;
+        }
+    }
+    
+    &__link {
+        text-decoration: none;
+        color: white;
+    }
+    
+    &__link:hover {
+        color: #ED1C24;
+        text-shadow: 
+        1px -1px #47b,
+        -1px 1px #47b,
+        -1px -1px #47b,
+        1px 1px #47b
+        ;
+    }
+    
+    @media (min-width: 768px){
+        height: 200px;
+        width: 100%;
+        font-size: .7em;
+        
+    }
+    
+    @media (min-width: 1024px) {
+        height: 250px;
+        font-size: 1em;
+        
+    }
+
+}
+

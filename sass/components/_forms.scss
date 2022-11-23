@@ -1,0 +1,127 @@
+.form {
+    min-width: 300px;
+    background-color: rgb(68, 119, 187, 0.5);
+    font-size: 2em;
+    color: white;
+    border: solid 8px #ed1c24;
+    border-radius: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.1em;
+    @media (min-width: 425px) {
+        padding: 0.5em 1em;
+    }
+
+    &__section {
+        margin: 5px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @media (min-width: 425px) {
+            flex-direction: row;
+            justify-content: space-between;
+            margin-bottom: 0.5em;
+            margin: 0;
+        }
+    }
+
+    &__label {
+        margin: 1em;
+        min-width: fit-content;
+        @media (min-width: 768px) {
+        }
+    }
+
+    &__input {
+        color: #47b;
+        border: solid #ed1c24 1vh;
+        border-radius: 25px;
+        width: 100%;
+        height: 100%;
+        accent-color: #ed1c24;
+    }
+
+    &__input:focus {
+        box-shadow: 5px -5px 5px white, -5px -5px 5px white, 5px 5px 5px white,
+            -5px 5px 5px white;
+        background-color: rgb(255, 255, 255, 0.7);
+    }
+
+    &__button {
+        width: 50%;
+        background-color: #47b;
+        border: solid 5px #ed1c24;
+        border-radius: 50px;
+        color: rgb(68, 119, 187, 0.8);
+        text-shadow: 2px -2px #ed1c24, -2px -2px #ed1c24, 2px 2px #ed1c24,
+            -2px 2px #ed1c24;
+    }
+
+    &__button:hover {
+        background-color: rgb(68, 119, 187, 0.7);
+        box-shadow: 5px -5px 5px white, -5px -5px 5px white, 5px 5px 5px white,
+            -5px 5px 5px white;
+    }
+
+    &__button:active {
+        background-color: #47b;
+        color: rgb(0, 0, 0, 0.2);
+    }
+}
+
+.registration-form__freeShipping {
+    border: #ed1c24 solid 3px;
+    background-color: rgb(255, 255, 255, 0.5);
+    border-radius: 5em;
+    padding: 0 0.5em;
+    flex-direction: row;
+
+    &__input {
+        margin: 0;
+        width: 0.5em;
+        @media (min-width: 368px) {
+        }
+    }
+    &__label {
+        margin-left: 0.5em;
+        @media (min-width: 368px) {
+        }
+    }
+
+    @media (min-width: 368px) {
+        justify-content: flex-start;
+        width: 360px;
+        align-self: flex-start;
+        padding: 0 0 0 1em;
+    }
+}
+
+.error-detail {
+    background-image: url(../../img/error-detail_img/error-icon.png);
+    background-size: 1em;
+    background-repeat: no-repeat;
+    background-position: left top;
+    padding-left: 1.1em;
+    padding-right: 0.2em;
+    background-color: rgb(237, 28, 36, 0.5);
+    font-size: 0.5em;
+    color: rgb(255, 255, 255, 0.8);
+    text-shadow: 2px -2px #1e2a38, -2px -2px #1e2a38, -2px 2px #1e2a38,
+        2px 2px #1e2a38;
+    border: solid 3px #ed1c24;
+    border-top: none;
+    margin: 0 1em;
+    display: none;
+    @media (min-width: 768px) {
+        align-self: flex-start;
+        margin-left: 1em;
+    }
+}
+
+.error {
+    display: block;
+}
