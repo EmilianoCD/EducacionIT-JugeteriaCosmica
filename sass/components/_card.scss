@@ -60,15 +60,18 @@
 
         }
         @media (min-width: 1024px) {
-            width: 1000px;
             margin-top: 4.5em;
-            height: fit-content;
+            height: 300px;
+            display: flex;
+            justify-content: center;
         }
     }
 
     &__image {
         width: 100%;
-        @media (min-width: 768px) {
+        @media (min-width: 1024px) {
+        height: 100%;
+        width: auto;
         }
     }
 
@@ -78,21 +81,20 @@
 
         @media (min-width: 768px) {
             font-size: 3em;
-            top: 5%;
+            top: -12%;
         }
 
         @media (min-width: 1024px) {
             font-size: 5em;
-            top: -20%;
+            top: 0;
         }
     }
 
     &__heading {
         text-align: center;
         width: 100%;
-        line-height: 0.1em;
         @media (min-width: 768px) {
-            font-size: 3em;
+            font-size: 2.5em;
             text-shadow: 
             3px -3px #ed1c24, 
             -3px -3px #ed1c24, 
@@ -101,12 +103,16 @@
             ;
             position: absolute;
             top: 0;
+            right: 0;
+            width: 50%;
             text-align: right;
         }
         @media (min-width: 1024px) {
+            width: 100%;
             font-size: 5em;
-            top: -10%;
+            top: -20%;
             left: 0;
+            right: initial;
             text-align: left;
         }
     }

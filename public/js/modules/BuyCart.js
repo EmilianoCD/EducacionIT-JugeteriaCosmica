@@ -54,14 +54,19 @@ export default class BuyCart {
     }
 
     static async addProduct(id, quantity = 1) {
-        if (BuyCart.products[id]) {
-            BuyCart.addQuantityToProduct(id, quantity);
+        if (BuyCart.fetching) {
             return;
         }
-        const product = await productController.getProduct(id);
-        product.quantity = quantity;
-        BuyCart.products[id] = product;
-        await BuyCart.appendNewProduct(product);
+        BuyCart.fetching = true;
+        if (BuyCart.products[id]) {
+            BuyCart.addQuantityToProduct(id, quantity);
+        } else {
+            const product = await productController.getProduct(id);
+            product.quantity = quantity;
+            BuyCart.products[id] = product;
+            await BuyCart.appendNewProduct(product);
+        }
+        BuyCart.fetching = false;
     }
 
     static async addQuantityToProduct(id, quantity) {
