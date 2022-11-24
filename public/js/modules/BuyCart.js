@@ -43,6 +43,14 @@ export default class BuyCart {
         BuyCart.checkbox.addEventListener("change", (e) => {
             body.classList.toggle("modal-opened");
         });
+        
+        document.addEventListener('keydown', e => {
+            if (e.key == 'Escape' ) {
+                BuyCart.checkbox.checked = false;
+                body.classList.toggle("modal-opened");
+        }
+    });
+    
     }
 
     static async addProduct(id, quantity = 1) {
@@ -112,4 +120,5 @@ export default class BuyCart {
         delete BuyCart.products[id];
         BuyCart.updateCart();
     }
+    
 }

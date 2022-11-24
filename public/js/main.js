@@ -1,8 +1,6 @@
 import BuyCart from "./modules/BuyCart.js";
 const mainElement = document.querySelector('main');
 
-
-
 class Main {
 
     async ajax(url, method = 'get') {
